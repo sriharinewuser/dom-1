@@ -9,6 +9,19 @@ body {
     height: 100vh;
   }
 
+  h1{
+    margin: 0;
+    padding: auto;
+    align-content:center;
+    justify-content: center;
+    align-self: start;
+    text-size-adjust: 8;
+    margin-top: 100px;
+    margin-left: 100px;
+    
+    
+  }
+
   .calculator {
     background-color: #5b56564e;
     border-radius: 2px solid;
@@ -16,6 +29,7 @@ body {
     padding: 20px;
     width: 310px;
     text-align: center;
+    margin-right: 300px;
   }
 
   .calculator input {

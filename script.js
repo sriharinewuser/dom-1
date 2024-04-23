@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    const display = document.getElementById('display');
+    const display = document.getElementById('result');
     let operand1 = '';
     let operator = '';
     let operand2 = '';
