@@ -1,67 +1,66 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #d4d5d6af;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  background-color: #cbc8dc;
+  font-family: 'Orbitron', monospace; /* You can link Orbitron from Google Fonts */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  h1{
-    margin: 0;
-    padding: auto;
-    align-content:center;
-    justify-content: center;
-    align-self: start;
-    text-size-adjust: 8;
-    margin-top: 100px;
-    margin-left: 100px;
-    
-    
-  }
+.calculator {
+  background-color: #111;
+  width: 300px;
+  border: 4px solid #222;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
 
-  .calculator {
-    background-color: #5b56564e;
-    border-radius: 2px solid;
-    box-shadow: 0 0 10px rgba(21, 12, 192, 0.86);
-    padding: 20px;
-    width: 310px;
-    text-align: center;
-    margin-right: 300px;
-  }
+.display {
+  background-color: black;
+  color: #ffcc00;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 10px;
+  height: 60px;
+}
 
-  .calculator input {
-    width: 100%;
-    margin-bottom: 30px;
-    padding: 10px;
-    font-size: 18px;
-    border: 1px solid #47474b01;
-    border-radius: 2px;
-    box-sizing: border-box;
-  }
+.result {
+  color: white;
+  font-size: 2rem;
+  margin-top: 5px;
+}
 
-  .calculator button {
-    width: 48%;
-    padding: 5px;
-    font-size: 14px;
-    border: none;
-    background-color: #b4b6b8b7;
-    color: #0f0101;
-    cursor: pointer;
-  }
-   .calculator button:hover {
-    background-color: #0c2bb5eb;
-   
-  }
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+}
 
+button {
+  font-size: 1.2rem;
+  padding: 20px;
+  border: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
 
-  .calculator button.clear {
-    background-color: #7d0303;
-  }
+button:hover {
+  background-color: #666;
+}
 
-  .calculator button.clear:hover {
-    background-color: #bb0a1b;
-  }
- 
+button.operator {
+  background-color: #666;
+}
+
+button.equal {
+  background-color: #003b5b;
+  color: #fff;
+  grid-row: span 2;
+}
+
+button.clear {
+  background-color: #b13b3b;
+  color: white;
+  grid-column: span 2;
+}
